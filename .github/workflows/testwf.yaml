@@ -4,4 +4,5 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - run: pwsh -command get-module -listavailable
+      - run: pwsh -command Set-PSRepository -name PSGallery -InstallationPolicy "Trusted"
+      - run: pwsh -command Install-Module -Name Az
