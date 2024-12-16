@@ -4,6 +4,5 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - run: choco install gh
-      - run: gh version
+      - run: $psversiontable
       - run: python3 --version
